@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main>
+    <h2>Contact</h2>
+    <div class="box">
+      <div>
+        <ul class="contact-list">
+          <li><span class="ico" aria-hidden="true">&#9993;</span><span id="email"></span></li>
+          <li><span class="ico" aria-hidden="true">f</span><span data-fill="facebook"></span></li>
+          <li><span class="ico" aria-hidden="true">&#9678;</span><span data-fill="instagram"></span></li>
+        </ul>
+        <p style="margin-top:18px">
+          <button class="btn" onclick="copyEmail()">Copy my email</button>
+          <button class="btn" id="cvBtn" onclick="toggleCV()">View CV</button>
+          <a class="btn" href="cv.pdf" download="Rosendo-Espina-CV.pdf">Download CV</a>
+        </p>
+        <p id="copyMsg" role="status"></p>
+      </div>
+      <div>
+        <form id="contactForm" onsubmit="return sendMessage(event)" novalidate>
+          <label>Name <input id="fName" type="text"></label>
+          <label>Email <input id="fEmail" type="email"></label>
+          <label>Subject <input id="fSubject" type="text"></label>
+          <label>Message <textarea id="fMessage" rows="4"></textarea></label>
+          <!-- spam trap: real people leave this empty -->
+          <div class="trap"><label>Leave empty <input id="fTrap" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn" type="submit">Submit</button>
+          <p id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <div id="cvBox" class="cv-box" hidden>
+      <iframe id="cvFrame" title="My CV"></iframe>
+      <p>Can&rsquo;t see it? <a href="cv.pdf" target="_blank">Open the CV in a new tab</a>.</p>
+    </div>
+  </main>
+  <footer id="siteFooter"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
