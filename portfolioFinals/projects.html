@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Rosendo S. Espina Jr.</title>
+  <meta name="description" content="Web, design and school projects by Rosendo S. Espina Jr.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html" aria-label="Home"></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="icon-btn" id="themeBtn" type="button">Dark</button>
+      </nav>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <div class="page-head"><h1 class="page-title">Projects</h1></div>
+      <form class="filters" role="search">
+        <label>Search<input id="search" type="search" placeholder="Name, technology, category..." autocomplete="off"></label>
+        <label>Category<select id="category"><option value="">All</option><option value="Graphic Design">Graphic Design</option><option value="Web Development">Web Development</option></select></label>
+        <label>Year<select id="year"><option value="">All</option><option value="2026">2026</option></select></label>
+        <label>Type<select id="type"><option value="">All</option><option value="Personal project">Personal project</option><option value="School project">School project</option></select></label>
+      </form>
+      <p class="count" id="count" role="status"></p>
+      <div class="grid">
+        <article class="project" data-search="personal portfolio website web development personal project 2026 a responsive portfolio website with project search, dark mode and a downloadable cv. html css javascript figma" data-category="Web Development" data-year="2026" data-type="Personal project">
+          <img src="assets/img/figma-prototype.webp" alt="Figma prototype showing the Home, About, Projects, Skills and Contact pages linked together" loading="lazy">
+          <div class="body">
+            <p class="meta">Web Development, 2026. Personal project.</p>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio website with project search, dark mode and a downloadable CV.</p>
+            <p class="meta">Role: Designer and developer</p>
+            <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li><li class="tag">Figma</li></ul>
+            <details>
+              <summary>View project details</summary>
+              <h4>Problem</h4><p>I needed one public place where employers and classmates can see my background, skills, projects and CV.</p>
+              <h4>Solution</h4><p>A fast static website with a page for each section. It is written in plain HTML, CSS and a little JavaScript.</p>
+              <h4>Features</h4><ul><li>Project search and filters</li><li>Light and dark mode</li><li>View and download CV</li><li>Contact form</li><li>Works on phones, tablets and desktops</li></ul>
+              <h4>Screenshots</h4><div class="shots"><figure><img src="assets/img/figma-prototype.webp" alt="Figma prototype showing the Home, About, Projects, Skills and Contact pages linked together" loading="lazy"><figcaption>Figma prototype showing the Home, About, Projects, Skills and Contact pages linked together</figcaption></figure></div>
+            </details>
+          </div>
+        </article>
+
+        <article class="project" data-search="urban threads brand kit graphic design school project 2026 logo, banner ad, social media post, landing page and newsletter header for a back-to-school clothing brand. gimp" data-category="Graphic Design" data-year="2026" data-type="School project">
+          <img src="assets/img/urban-threads-logo.webp" alt="Urban Threads round logo in blue and dusty pink" loading="lazy">
+          <div class="body">
+            <p class="meta">Graphic Design, 2026. School project.</p>
+            <h3>Urban Threads Brand Kit</h3>
+            <p>Logo, banner ad, social media post, landing page and newsletter header for a back-to-school clothing brand.</p>
+            <p class="meta">Role: Graphic designer</p>
+            <ul class="tags"><li class="tag">GIMP</li></ul>
+            <details>
+              <summary>View project details</summary>
+              <h4>Problem</h4><p>A new clothing brand needs a recognizable look that stays the same across its logo, ads, website and emails.</p>
+              <h4>Solution</h4><p>I made one logo and reused its colors, fonts and round shapes in a banner ad, a social media post, a landing page and a newsletter header.</p>
+              <h4>Features</h4><ul><li>Round logo with brand name and tagline</li><li>Banner ad for the Back-to-School Collection</li><li>Square social media post</li><li>Landing page with a Shop Now button</li><li>Wide newsletter header</li></ul>
+              <h4>Screenshots</h4><div class="shots"><figure><img src="assets/img/urban-threads-logo.webp" alt="Urban Threads round logo on a blue circle" loading="lazy"><figcaption>Urban Threads round logo on a blue circle</figcaption></figure><figure><img src="assets/img/urban-threads-banner.webp" alt="Banner ad promoting the Back-to-School Collection" loading="lazy"><figcaption>Banner ad promoting the Back-to-School Collection</figcaption></figure><figure><img src="assets/img/urban-threads-social.webp" alt="Square social media post for the Back To School T-Shirt collection" loading="lazy"><figcaption>Square social media post for the Back To School T-Shirt collection</figcaption></figure><figure><img src="assets/img/urban-threads-landing.webp" alt="Landing page design with the brand name and a Shop Now button" loading="lazy"><figcaption>Landing page design with the brand name and a Shop Now button</figcaption></figure><figure><img src="assets/img/urban-threads-newsletter.webp" alt="Wide newsletter header with the brand name and Back to School text" loading="lazy"><figcaption>Wide newsletter header with the brand name and Back to School text</figcaption></figure></div>
+            </details>
+          </div>
+        </article>
+
+        <article class="project" data-search="the 1975 badge design graphic design school project 2026 a pentagon badge for the band the 1975, with horizontal and vertical layouts. gimp" data-category="Graphic Design" data-year="2026" data-type="School project">
+          <img src="assets/img/1975-badge.webp" alt="Gray pentagon badge with the text The 1975 on a black background" loading="lazy">
+          <div class="body">
+            <p class="meta">Graphic Design, 2026. School project.</p>
+            <h3>The 1975 Badge Design</h3>
+            <p>A pentagon badge for the band The 1975, with horizontal and vertical layouts.</p>
+            <p class="meta">Role: Graphic designer</p>
+            <ul class="tags"><li class="tag">GIMP</li></ul>
+            <details>
+              <summary>View project details</summary>
+              <h4>Problem</h4><p>A logo has to fit different spaces, such as a wide banner and a tall poster.</p>
+              <h4>Solution</h4><p>I drew one pentagon badge and arranged it with the tagline side by side for wide spaces and stacked for tall spaces.</p>
+              <h4>Features</h4><ul><li>Pentagon badge</li><li>Horizontal layout</li><li>Vertical layout</li></ul>
+              <h4>Screenshots</h4><div class="shots"><figure><img src="assets/img/1975-badge.webp" alt="Gray pentagon badge with the text The 1975 on a black background" loading="lazy"><figcaption>Gray pentagon badge with the text The 1975 on a black background</figcaption></figure><figure><img src="assets/img/1975-horizontal.webp" alt="Badge and tagline arranged side by side" loading="lazy"><figcaption>Badge and tagline arranged side by side</figcaption></figure><figure><img src="assets/img/1975-vertical.webp" alt="Badge and tagline stacked vertically" loading="lazy"><figcaption>Badge and tagline stacked vertically</figcaption></figure></div>
+            </details>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="empty" hidden>No project matches your search. Try a different word or reset the filters.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Rosendo S. Espina Jr.</strong> &mdash; Bachelor of Science in Information Technology</p>
+      <ul class="foot-links">
+        <li><a href="mailto:rosendoe040@gmail.com">rosendoe040@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/den_endl" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="cv.html">CV</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <p class="muted">&copy; 2026 Rosendo S. Espina Jr. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
